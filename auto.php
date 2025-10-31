@@ -22,15 +22,15 @@ if (isset($_POST['auto'])) {
                 exit;
             }
         }else{
-            echo 'Не верный пароль!';
+            echo '<div class="alert alert-danger">Не верный пароль!</div>';
         }
     }else{
-        echo 'Не верный логин!';
+        echo '<div class="alert alert-danger">Не верный логин!</div>';
     }
 
 }
 ?>
-<div class="container mt-4 mb-3 border border-warning border-3 rounded">
+<div class="container mt-4 mb-3 border border-primary border-3 rounded">
     <h3 class="text-center">Аторизация</h3>
         <form method="post">
             <div class="mb-3">
@@ -41,7 +41,7 @@ if (isset($_POST['auto'])) {
                 <label for="exampleInputEmail1" class="form-label">Введите пароль</label>
                 <input type="password" name="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
-            <button type="submit" name="auto" class="btn btn-dark text-warning mb-3">Войти</button>
+            <button type="submit" name="auto" class="btn btn-primary text-warning mb-3">Войти</button>
         </form>
 </div>
 <?php

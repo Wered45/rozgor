@@ -1,25 +1,25 @@
-<div class="bg-warning">
+<div class="bg-primary">
     <div class="footer d-flex justify-content-between p-4">
         <div class="footer_item">
-            <p>Контактные информации</p>
+            <p class="text-warning">Контактные информации</p>
             <ul class="m-0 p-0">
                 <li class="d-flex align-items-center">
                     <img src="img/город 1.png" class="d-flex" alt="">
-                    <p class="m-0">г. Саратов, ул. Политехническая, 77</p>
+                    <p class="m-0 text-warning">г. Краснодар, ул. Красная, 134</p>
                 </li>
                 
                 <li  class="d-flex align-items-center"> 
                     <img src="img/телефон 1.png" class="d-flex"alt="">
-                    <p class="m-0">+7 (8452) 99-87-15</p>
+                    <p class="m-0 text-warning">+7 (8452) 99-87-15</p>
                 </li>
                 <li  class="d-flex align-items-center">
                     <img src="img/почта 1.png" class="d-flex" alt="">
-                    <p class="m-0">kumovasv@sstu.ru</p>
+                    <p class="m-0 text-warning">kumovasv@sstu.ru</p>
                  </li>
             </ul>
         </div>
          <div class="footer_item">
-            <p>Наши соц. сети</p>
+            <p class="text-warning">Наши соц. сети</p>
             <ul class="d-flex list-unstyled">
                 <li>
                     <a href="#">

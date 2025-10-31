@@ -3,8 +3,6 @@ include 'temp/headr.php';
 $sql_user = 'select * from users where id_role = 2';
 $works = $conect->query($sql_user);
 
-
-
 if (isset($_POST['tesk'])) {
     $name_task = $_POST['name_task'];
     $opic = $_POST['opic'];
@@ -52,7 +50,7 @@ if(isset($_POST['edit_task'])){
   exit;
 }
 ?>
-<div class="container mt-4 mb-3 border border-warning border-3 rounded">
+<div class="container mt-4 mb-3 border border-primary border-3 rounded">
     <h3 class="text-center">Добавить задание</h3>
         <form method="post">
             <div class="mb-3">
@@ -78,7 +76,7 @@ if(isset($_POST['edit_task'])){
                     <?php }?>
                 </select>
             </div>
-            <button type="submit" name="tesk" class="btn btn-dark text-warning">Добавить задание</button>
+            <button type="submit" name="tesk" class="btn btn-primary text-warning">Добавить задание</button>
         </form>
 </div>
 
@@ -133,7 +131,7 @@ if(isset($_POST['edit_task'])){
     </th>
 
       <th scope="row">
-          <input type="submit" name='edit_task' class="btn btn-warning" value="Редактировать">
+          <input type="submit" name='edit_task' class="btn btn-primary text-warning" value="Редактировать">
 
         <form method="post">
         <input type="hidden" name="id_task" value="<?=$row['id_task']?>">

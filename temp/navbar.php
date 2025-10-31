@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg bg-warning">
+<nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
-            <img src="img/лготип 1.png">
-            <a class="navbar-brand text-dark m-3" href="/">IT-технологии</a>
+            <img src="/img/логотип.jpg" width="120px">
+            <a class="navbar-brand text-warning m-3 text-uppercase" href="/">ООО РАЗГОР</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -11,10 +11,10 @@
                 if (!isset($_SESSION['id_user'])) {
                 ?>
                 <li class="nav-item">
-                <a class="nav-link active text-dark" aria-current="page" href="index.php">Главная</a>
+                <a class="nav-link active text-warning" aria-current="page" href="index.php">Главная</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active text-dark" aria-current="page" href="reg.php">Регистрация</a>
+                <a class="nav-link active text-warning" aria-current="page" href="reg.php">Регистрация</a>
                 </li>
                 <li class="ms-auto">
                     <a class="btn btn-dark text-warning" href="auto.php">Войти</a>
@@ -23,13 +23,13 @@
                 }
                 if (isset($_SESSION['id_user']) && $_SESSION['role'] == 'сотрудник') {
                     echo '<li class="nav-item">
-                <a class="nav-link active text-dark" aria-current="page"">'.$_SESSION['name'].'</a>
+                <a class="nav-link active text-warning" aria-current="page"">'.$_SESSION['name'].'</a>
                 </li>';
                     echo '<li class="nav-item">
-                <a class="nav-link active text-dark" aria-current="page" href="not_task.php">Задание</a>
+                <a class="nav-link active text-warning" aria-current="page" href="not_task.php">Задание</a>
                 </li>';
                 echo '<li class="nav-item">
-                <a class="nav-link active text-dark" aria-current="page" href="notifications.php">Уведомление ('.$count.')</a>
+                <a class="nav-link active text-warning" aria-current="page" href="notifications.php">Уведомление ('.$count.')</a>
                 </li>';
                 echo '<li class="ms-auto">
                     <a class="btn btn-dark text-warning" href="logout.php">Выход</a>
@@ -37,7 +37,7 @@
                 }
                 if (isset($_SESSION['id_user']) && $_SESSION['role'] == 'руководитель') {
                     echo '<li class="nav-item">
-                <a class="nav-link active text-dark" aria-current="page" href="meneger_task.php">Добавить задание</a>
+                <a class="nav-link active text-warning" aria-current="page" href="meneger_task.php">Добавить задание</a>
                 </li>';
                 echo '<li class="ms-auto">
                     <a class="btn btn-dark text-warning" href="logout.php">Выход</a>
